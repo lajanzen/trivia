@@ -1,0 +1,24 @@
+.questionCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  border: solid 0.2em #e529eca8;
+  background-color: #e529eca8;
+  border-radius: 2em;
+  margin: 3em 2em 0;
+  padding: 3em;
+}
+
+.question {
+  grid-column: span 2;
+}
+
+.answer {
+  display: grid;
+  place-items: center;
+  border-radius: 1em;
+  background-color: #fff;
+  width: 20em;
+  height: 4em;
+  font-weight: bold;
+}

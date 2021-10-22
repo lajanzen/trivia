@@ -1,8 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+:root {
+  --font-family: "Quicksand", sans-serif;
+  --color-primary: #1d3557;
+  --color-secondary: #a8dadc;
+  --color-card-text: #190dc0;
+  --color-contrast: #fff;
+  --color-cta: #e63946;
+}
+
+body {
+  margin: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.header {
+  display: grid;
+  background-color: var(--color-primary);
+  color: var(--color-contrast);
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 1em;
+  padding-top: 1em;
 }

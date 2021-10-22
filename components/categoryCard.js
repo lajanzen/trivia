@@ -1,11 +1,14 @@
 import createElement from "../lib/elements";
 import styles from "./categoryCard.module.css";
 
-export default function createCategoryCard({ id, name }) {
+export default function createCategoryCard({ name, id }, onClick) {
   const categoryCard = createElement(
-    "a",
+    "button",
     {
-      href: `https://opentdb.com/api_count.php?category=${id}`,
+      onclick: (event) => {
+        event.preventDefault();
+        onClick(id, name);
+      },
       className: styles.categoryCard,
     },
     [name]

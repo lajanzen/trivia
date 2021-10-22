@@ -1,7 +1,7 @@
 .categoryCard {
   display: grid;
   place-items: center;
-  background-color: var(--color-secondary);
+  background-color: #1e69f5d3;
   height: 5em;
   width: 9em;
   border-radius: 1em;
@@ -11,6 +11,23 @@
   font-weight: bold;
 }
 
-a {
-  text-decoration: none;
+.categoryCard:nth-child(2n) {
+  background-color: #e529eca8;
+}
+
+.categoryCard:nth-child(3n) {
+  background-color: #10f8109d;
+}
+
+.categoryCard:nth-child(3n + 2) {
+  background-color: yellow;
+}
+
+button {
+  border: none;
+}
+
+button:active {
+  background-color: black;
+  color: white;
 }
